@@ -6,7 +6,7 @@ import environment from './environment';
 import Spinner from 'react-spinkit';
 
 const query = graphql`
-  query AppQuery($bookId: ID!) {
+  query AppQuery($bookId: String!) {
     book(id: $bookId) {
       id
       title
@@ -16,7 +16,7 @@ const query = graphql`
   }
 `;
 
-const App = ({ books, match }) =>
+const App = () =>
   <QueryRenderer
     environment={environment}
     query={query}

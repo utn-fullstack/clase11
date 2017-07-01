@@ -3,8 +3,8 @@
  *   relay-compiler
  *
  * @providesModule AppQuery.graphql
- * @generated SignedSource<<402de18dc3b569661f25261d638e21c3>>
- * @relayHash d1bc8ad22c34a8bd5ac8330f2687c3bd
+ * @generated SignedSource<<bf4ce8c16f8bc4f76bc76e72ae4b615e>>
+ * @relayHash 12e2b9cae0cb2259707ad6ba8e01fe5c
  * @flow
  * @nogrep
  */
@@ -21,7 +21,7 @@ import type {ConcreteBatch} from 'relay-runtime';
 
 /*
 query AppQuery(
-  $bookId: ID!
+  $bookId: String!
 ) {
   book(id: $bookId) {
     id
@@ -38,7 +38,7 @@ const batch /*: ConcreteBatch*/ = {
       {
         "kind": "LocalArgument",
         "name": "bookId",
-        "type": "ID!",
+        "type": "String!",
         "defaultValue": null
       }
     ],
@@ -54,7 +54,7 @@ const batch /*: ConcreteBatch*/ = {
             "kind": "Variable",
             "name": "id",
             "variableName": "bookId",
-            "type": "ID!"
+            "type": "String!"
           }
         ],
         "concreteType": "Book",
@@ -104,7 +104,7 @@ const batch /*: ConcreteBatch*/ = {
       {
         "kind": "LocalArgument",
         "name": "bookId",
-        "type": "ID!",
+        "type": "String!",
         "defaultValue": null
       }
     ],
@@ -120,7 +120,7 @@ const batch /*: ConcreteBatch*/ = {
             "kind": "Variable",
             "name": "id",
             "variableName": "bookId",
-            "type": "ID!"
+            "type": "String!"
           }
         ],
         "concreteType": "Book",
@@ -160,7 +160,7 @@ const batch /*: ConcreteBatch*/ = {
       }
     ]
   },
-  "text": "query AppQuery(\n  $bookId: ID!\n) {\n  book(id: $bookId) {\n    id\n    title\n    image\n    author\n  }\n}\n"
+  "text": "query AppQuery(\n  $bookId: String!\n) {\n  book(id: $bookId) {\n    id\n    title\n    image\n    author\n  }\n}\n"
 };
 
 module.exports = batch;
